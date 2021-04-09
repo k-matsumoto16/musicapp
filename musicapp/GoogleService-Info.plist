@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>712845832615-8380eillc1d387i4jukcs0osdugf9lsr.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.712845832615-8380eillc1d387i4jukcs0osdugf9lsr</string>
+	<key>API_KEY</key>
+	<string>AIzaSyClWU35cBlmtur2-8nIcuexeNr8-U_BuNw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>712845832615</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>kouki.matsumoto.musicapp</string>
+	<key>PROJECT_ID</key>
+	<string>musicapp-2ab01</string>
+	<key>STORAGE_BUCKET</key>
+	<string>musicapp-2ab01.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:712845832615:ios:8a5ca1f144a6936e748682</string>
+</dict>
+</plist>

@@ -13,9 +13,13 @@
 		C67D51772620772400F51868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67D51752620772400F51868 /* Main.storyboard */; };
 		C67D51792620772500F51868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67D51782620772500F51868 /* Assets.xcassets */; };
 		C67D517C2620772500F51868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67D517A2620772500F51868 /* LaunchScreen.storyboard */; };
+		C67D5186262079B400F51868 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C67D5185262079B400F51868 /* GoogleService-Info.plist */; };
+		EDEA994CDB5013E898A2A486 /* Pods_musicapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8323156E7231F3A6A8B7D8FE /* Pods_musicapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8323156E7231F3A6A8B7D8FE /* Pods_musicapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_musicapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CA2014B6E9405FB0234360C /* Pods-musicapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicapp.debug.xcconfig"; path = "Target Support Files/Pods-musicapp/Pods-musicapp.debug.xcconfig"; sourceTree = "<group>"; };
 		C67D516C2620772400F51868 /* musicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = musicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67D516F2620772400F51868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C67D51712620772400F51868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		C67D51782620772500F51868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C67D517B2620772500F51868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C67D517D2620772500F51868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67D5185262079B400F51868 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EC38D79D287BAB323CF8A7C0 /* Pods-musicapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-musicapp.release.xcconfig"; path = "Target Support Files/Pods-musicapp/Pods-musicapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDEA994CDB5013E898A2A486 /* Pods_musicapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01CD266F964801F247B551CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CA2014B6E9405FB0234360C /* Pods-musicapp.debug.xcconfig */,
+				EC38D79D287BAB323CF8A7C0 /* Pods-musicapp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6D06E7C6AB3F25F2E8351E14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8323156E7231F3A6A8B7D8FE /* Pods_musicapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C67D51632620772400F51868 = {
 			isa = PBXGroup;
 			children = (
 				C67D516E2620772400F51868 /* musicapp */,
 				C67D516D2620772400F51868 /* Products */,
+				01CD266F964801F247B551CD /* Pods */,
+				6D06E7C6AB3F25F2E8351E14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 				C67D51782620772500F51868 /* Assets.xcassets */,
 				C67D517A2620772500F51868 /* LaunchScreen.storyboard */,
 				C67D517D2620772500F51868 /* Info.plist */,
+				C67D5185262079B400F51868 /* GoogleService-Info.plist */,
 			);
 			path = musicapp;
 			sourceTree = "<group>";
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C67D51802620772500F51868 /* Build configuration list for PBXNativeTarget "musicapp" */;
 			buildPhases = (
+				9FC68500726C9A40C0A75B03 /* [CP] Check Pods Manifest.lock */,
 				C67D51682620772400F51868 /* Sources */,
 				C67D51692620772400F51868 /* Frameworks */,
 				C67D516A2620772400F51868 /* Resources */,
+				1249E480F1518471220379B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67D517C2620772500F51868 /* LaunchScreen.storyboard in Resources */,
+				C67D5186262079B400F51868 /* GoogleService-Info.plist in Resources */,
 				C67D51792620772500F51868 /* Assets.xcassets in Resources */,
 				C67D51772620772400F51868 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1249E480F1518471220379B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-musicapp/Pods-musicapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-musicapp/Pods-musicapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-musicapp/Pods-musicapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC68500726C9A40C0A75B03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-musicapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C67D51682620772400F51868 /* Sources */ = {
@@ -283,6 +356,7 @@
 		};
 		C67D51812620772500F51868 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA2014B6E9405FB0234360C /* Pods-musicapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,15 +367,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.kouki.matsumoto.musicapp;
+				PRODUCT_BUNDLE_IDENTIFIER = kouki.matsumoto.musicapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		C67D51822620772500F51868 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC38D79D287BAB323CF8A7C0 /* Pods-musicapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,10 +387,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.kouki.matsumoto.musicapp;
+				PRODUCT_BUNDLE_IDENTIFIER = kouki.matsumoto.musicapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
